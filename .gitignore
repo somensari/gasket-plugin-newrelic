@@ -1,0 +1,13 @@
+node_modules/
+dist/
+cjs/
+coverage/
+*.tgz
+.env
+.env.local
+.env
+*.log
+newrelic_agent.log
+test-app/.env
+test-app/node_modules/
+newrelic_agent.log

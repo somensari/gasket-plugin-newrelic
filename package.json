@@ -1,0 +1,56 @@
+{
+  "name": "@gasket/plugin-newrelic",
+  "version": "0.1.0",
+  "description": "Adds New Relic APM instrumentation to your Gasket application",
+  "type": "module",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "cjs",
+    "generator",
+    "EXAMPLES.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./cjs/index.cjs",
+      "default": "./cjs/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godaddy/gasket.git"
+  },
+  "keywords": [
+    "gasket",
+    "plugin",
+    "newrelic",
+    "new-relic",
+    "apm",
+    "observability",
+    "monitoring"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/godaddy/gasket/issues",
+  "homepage": "https://github.com/godaddy/gasket/tree/main/packages/gasket-plugin-newrelic",
+  "dependencies": {
+    "@gasket/request": "^7.5.5"
+  },
+  "devDependencies": {
+    "@gasket/core": "^7.7.3",
+    "@gasket/plugin-express": "^7.5.2",
+    "@gasket/plugin-metadata": "^7.5.9",
+    "create-gasket-app": "^7.4.17",
+    "express": "^5.2.1",
+    "newrelic": "^13.0.0",
+    "supertest": "^7.2.2",
+    "vitest": "^3.2.0"
+  },
+  "scripts": {
+    "test": "vitest run --globals",
+    "test:watch": "vitest --watch --globals",
+    "test:coverage": "vitest run --coverage"
+  }
+}

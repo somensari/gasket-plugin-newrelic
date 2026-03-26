@@ -1,0 +1,24 @@
+{
+  "name": "gasket-newrelic-test-app",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_OPTIONS=--import=./setup.js node server.js",
+    "local": "NODE_OPTIONS=--import=./setup.js node --watch server.js",
+    "start:express": "NODE_OPTIONS=--import=./setup.js node server-express.js",
+    "local:express": "NODE_OPTIONS=--import=./setup.js node --watch server-express.js"
+  },
+  "dependencies": {
+    "@gasket/core": "^7.7.3",
+    "@gasket/plugin-express": "^7.5.2",
+    "@gasket/plugin-fastify": "^7.5.3",
+    "@gasket/plugin-https": "^7.4.1",
+    "@gasket/plugin-logger": "^7.4.0",
+    "@gasket/plugin-winston": "^7.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "fastify": "^4.29.1",
+    "newrelic": "^13.17.0",
+    "winston": "^3.17.0"
+  }
+}
